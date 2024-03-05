@@ -6,13 +6,7 @@ public class Main {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         Contact john = new Contact("john", "john@johnmail.john");
-        john.display();
         BusinessContact johnny = new BusinessContact("johnny", "johnny@johnnymail.Johnny", "123412342314");
-        johnny.display();
-        Contact userContact = createContact();
-        userContact.display();
-        BusinessContact userBusinessContact = createBusinessContact();
-        userBusinessContact.display();
     }
 
     static Contact createContact(){
