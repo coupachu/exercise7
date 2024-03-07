@@ -1,6 +1,6 @@
 public class Contact {
-    private static String name;
-    private static String email;
+    private String name;
+    private String email;
 
     public Contact(String name, String email) {
         this.name = name;
@@ -24,6 +24,14 @@ public class Contact {
     }
 
     public void display(){
-        System.out.println("Name: " + name + " Email: " + email);
+        System.out.println("Name: " + this.name + " Email: " + this.email);
+    }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

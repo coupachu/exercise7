@@ -16,8 +16,11 @@ public class ContactBook {
     }
 
     public void display() {
-        for (Contact i : contactList){
+        for (Contact i : this.contactList){
             i.display();
         }
 }
+    public void addContact(Contact a){
+        this.contactList.add(a);
+    }
 }

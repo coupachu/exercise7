@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -7,6 +8,11 @@ public class Main {
     public static void main(String[] args) {
         Contact john = new Contact("john", "john@johnmail.john");
         BusinessContact johnny = new BusinessContact("johnny", "johnny@johnnymail.Johnny", "123412342314");
+        ArrayList<Contact> myList = new ArrayList<>();
+        ContactBook myBook = new ContactBook(myList);
+        myBook.addContact(john);
+        myBook.addContact(johnny);
+        myBook.display();
     }
 
     static Contact createContact(){

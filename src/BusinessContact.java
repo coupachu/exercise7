@@ -1,5 +1,5 @@
 public class BusinessContact extends Contact{
-    private static String phoneNumber;
+    private String phoneNumber;
 
     public BusinessContact(String name, String email, String phoneNumber) {
         super(name, email);
@@ -17,5 +17,14 @@ public class BusinessContact extends Contact{
     @Override
     public void display() {
         System.out.println("Name: " + this.getName() + " Email: " + this.getEmail() + " Phone Number: " + this.getPhoneNumber());
+    }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + this.getName() + '\'' +
+                ", email='" + this.getEmail() + '\'' +"BusinessContact{" +
+                "phoneNumber='" + phoneNumber + '\'' +
+                '}';
     }
 }
